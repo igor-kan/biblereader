@@ -258,6 +258,66 @@ export default function EnhancedBibleStudy() {
       year: 2002,
       type: 'paraphrase',
       features: ['Contemporary language', 'Thought-for-thought', 'Easy understanding']
+    },
+    {
+      id: '5',
+      name: 'New American Standard Bible',
+      abbreviation: 'NASB',
+      language: 'English',
+      description: 'Literal translation known for accuracy and precision',
+      year: 2020,
+      type: 'formal',
+      features: ['Word-for-word accuracy', 'Scholarly precision', 'Consistent translation']
+    },
+    {
+      id: '6',
+      name: 'Christian Standard Bible',
+      abbreviation: 'CSB',
+      language: 'English',
+      description: 'Balance of accuracy and readability for modern readers',
+      year: 2017,
+      type: 'dynamic',
+      features: ['Optimal equivalence', 'Clear communication', 'Faithful translation']
+    },
+    {
+      id: '7',
+      name: 'New Living Translation',
+      abbreviation: 'NLT',
+      language: 'English',
+      description: 'Thought-for-thought translation in contemporary English',
+      year: 2015,
+      type: 'dynamic',
+      features: ['Easy understanding', 'Contemporary language', 'Natural flow']
+    },
+    {
+      id: '8',
+      name: 'Amplified Bible',
+      abbreviation: 'AMP',
+      language: 'English',
+      description: 'Expanded translation revealing multiple meanings and nuances',
+      year: 2015,
+      type: 'formal',
+      features: ['Multiple word meanings', 'Detailed explanations', 'Linguistic depth']
+    },
+    {
+      id: '9',
+      name: 'King James Version',
+      abbreviation: 'KJV',
+      language: 'English',
+      description: 'Historic English translation with traditional language',
+      year: 1769,
+      type: 'formal',
+      features: ['Traditional English', 'Historical significance', 'Poetic beauty']
+    },
+    {
+      id: '10',
+      name: 'New English Translation',
+      abbreviation: 'NET',
+      language: 'English',
+      description: 'Modern translation with extensive footnotes and commentary',
+      year: 2019,
+      type: 'formal',
+      features: ['Extensive notes', 'Scholarly transparency', 'Modern language']
     }
   ])
 
@@ -305,11 +365,11 @@ export default function EnhancedBibleStudy() {
       id: '1',
       name: 'Love and Relationships',
       description: 'Biblical perspective on love, marriage, and relationships',
-      verses: ['1 Corinthians 13:4-7', 'Ephesians 5:25-33', 'Song of Solomon 8:6-7'],
+      verses: ['1 Corinthians 13:4-7', 'Ephesians 5:25-33', 'Song of Solomon 8:6-7', '1 John 4:7-21', 'Romans 12:9-21', 'Colossians 3:12-17'],
       difficulty: 3,
       estimatedTime: 45,
       category: 'Relationships',
-      subtopics: ['Marital Love', 'Brotherly Love', 'God\'s Love'],
+      subtopics: ['Marital Love', 'Brotherly Love', 'God\'s Love', 'Forgiveness'],
       resources: [
         {
           id: '1',
@@ -325,11 +385,11 @@ export default function EnhancedBibleStudy() {
       id: '2',
       name: 'Faith and Trust in God',
       description: 'Understanding faith, trust, and reliance on God through difficult times',
-      verses: ['Hebrews 11:1', 'Proverbs 3:5-6', 'Romans 1:17', 'James 1:2-4'],
+      verses: ['Hebrews 11:1', 'Proverbs 3:5-6', 'Romans 1:17', 'James 1:2-4', 'Matthew 17:20', 'Mark 11:22-24', '2 Corinthians 5:7', 'Romans 10:17'],
       difficulty: 4,
       estimatedTime: 60,
       category: 'Spiritual Growth',
-      subtopics: ['Definition of Faith', 'Testing of Faith', 'Growing in Faith'],
+      subtopics: ['Definition of Faith', 'Testing of Faith', 'Growing in Faith', 'Faith vs Doubt'],
       resources: [
         {
           id: '2',
@@ -339,6 +399,167 @@ export default function EnhancedBibleStudy() {
           duration: 35,
           description: 'Sermon on maintaining faith during difficulties',
           rating: 4.8
+        }
+      ]
+    },
+    {
+      id: '3',
+      name: 'Prayer and Worship',
+      description: 'Learning to communicate with God through prayer and worship',
+      verses: ['Matthew 6:9-13', '1 Thessalonians 5:16-18', 'Philippians 4:6-7', 'James 5:13-16', 'Psalm 145:18', 'John 4:23-24', 'Romans 12:1-2'],
+      difficulty: 2,
+      estimatedTime: 40,
+      category: 'Spiritual Disciplines',
+      subtopics: ['The Lord\'s Prayer', 'Continuous Prayer', 'Worship in Spirit', 'Intercession'],
+      resources: [
+        {
+          id: '3',
+          title: 'The Power of Prayer',
+          type: 'article',
+          author: 'R.A. Torrey',
+          description: 'Classic teachings on effective prayer',
+          rating: 4.7
+        }
+      ]
+    },
+    {
+      id: '4',
+      name: 'Hope and Encouragement',
+      description: 'Finding hope and strength in God\'s promises during trials',
+      verses: ['Romans 8:28', 'Jeremiah 29:11', 'Isaiah 40:28-31', 'Psalm 23', '2 Corinthians 4:16-18', 'Romans 15:13', 'Psalm 42:5', 'Lamentations 3:22-23'],
+      difficulty: 2,
+      estimatedTime: 35,
+      category: 'Comfort',
+      subtopics: ['God\'s Promises', 'Overcoming Depression', 'Future Hope', 'Divine Strength'],
+      resources: [
+        {
+          id: '4',
+          title: 'Hope When Life Hurts',
+          type: 'book',
+          author: 'Larry Crabb',
+          description: 'Finding hope in the midst of suffering',
+          rating: 4.5
+        }
+      ]
+    },
+    {
+      id: '5',
+      name: 'Wisdom and Decision Making',
+      description: 'Seeking God\'s wisdom for life\'s important decisions',
+      verses: ['Proverbs 3:5-6', 'James 1:5-6', 'Proverbs 27:17', 'Ecclesiastes 7:12', 'Proverbs 16:9', 'Isaiah 55:8-9', 'Psalm 119:105', 'Proverbs 19:21'],
+      difficulty: 3,
+      estimatedTime: 50,
+      category: 'Practical Living',
+      subtopics: ['Seeking Counsel', 'Divine Guidance', 'Practical Wisdom', 'Life Decisions'],
+      resources: [
+        {
+          id: '5',
+          title: 'Decision Making by the Book',
+          type: 'audio',
+          author: 'Haddon Robinson',
+          duration: 45,
+          description: 'Biblical principles for decision making',
+          rating: 4.4
+        }
+      ]
+    },
+    {
+      id: '6',
+      name: 'Forgiveness and Grace',
+      description: 'Understanding God\'s forgiveness and extending grace to others',
+      verses: ['Ephesians 4:32', 'Matthew 6:14-15', 'Colossians 3:13', '1 John 1:9', 'Matthew 18:21-22', 'Romans 3:23-24', 'Ephesians 2:8-9', 'Psalm 103:12'],
+      difficulty: 3,
+      estimatedTime: 45,
+      category: 'Grace',
+      subtopics: ['God\'s Forgiveness', 'Forgiving Others', 'Grace vs Works', 'Mercy'],
+      resources: [
+        {
+          id: '6',
+          title: 'The Grace of God',
+          type: 'commentary',
+          author: 'Charles Spurgeon',
+          description: 'Deep dive into God\'s amazing grace',
+          rating: 4.9
+        }
+      ]
+    },
+    {
+      id: '7',
+      name: 'Salvation and Eternal Life',
+      description: 'Understanding the gospel message and the gift of eternal life',
+      verses: ['John 3:16', 'Romans 3:23', 'Romans 6:23', 'John 14:6', 'Acts 4:12', 'Ephesians 2:8-9', 'Romans 10:9-10', '1 John 5:11-13'],
+      difficulty: 2,
+      estimatedTime: 55,
+      category: 'Gospel',
+      subtopics: ['The Need for Salvation', 'Jesus as Savior', 'Assurance of Salvation', 'The Gospel'],
+      resources: [
+        {
+          id: '7',
+          title: 'The Gospel According to Jesus',
+          type: 'book',
+          author: 'John MacArthur',
+          description: 'Clear presentation of the gospel message',
+          rating: 4.8
+        }
+      ]
+    },
+    {
+      id: '8',
+      name: 'Christian Character and Virtues',
+      description: 'Developing Christ-like character and spiritual virtues',
+      verses: ['Galatians 5:22-23', '2 Peter 1:5-8', 'Philippians 4:8', 'Colossians 3:12-17', '1 Corinthians 13:4-7', 'Matthew 5:3-12', 'Romans 12:9-21'],
+      difficulty: 4,
+      estimatedTime: 60,
+      category: 'Character Development',
+      subtopics: ['Fruit of the Spirit', 'The Beatitudes', 'Virtue Development', 'Christ-likeness'],
+      resources: [
+        {
+          id: '8',
+          title: 'The Pursuit of Holiness',
+          type: 'book',
+          author: 'Jerry Bridges',
+          description: 'Growing in spiritual maturity and holiness',
+          rating: 4.7
+        }
+      ]
+    },
+    {
+      id: '9',
+      name: 'God\'s Providence and Sovereignty',
+      description: 'Understanding God\'s control over all things and His divine plan',
+      verses: ['Romans 8:28', 'Ephesians 1:11', 'Proverbs 16:9', 'Daniel 4:35', 'Isaiah 46:9-10', 'Job 42:2', 'Romans 11:33-36', 'Psalm 115:3'],
+      difficulty: 5,
+      estimatedTime: 70,
+      category: 'Theology',
+      subtopics: ['Divine Sovereignty', 'Human Responsibility', 'God\'s Will', 'Predestination'],
+      resources: [
+        {
+          id: '9',
+          title: 'The Sovereignty of God',
+          type: 'book',
+          author: 'A.W. Pink',
+          description: 'Comprehensive study of God\'s sovereignty',
+          rating: 4.6
+        }
+      ]
+    },
+    {
+      id: '10',
+      name: 'Service and Ministry',
+      description: 'Called to serve God and others with our gifts and talents',
+      verses: ['1 Peter 4:10-11', 'Ephesians 4:11-16', 'Romans 12:4-8', '1 Corinthians 12:4-7', 'Matthew 20:26-28', 'Galatians 5:13', 'Mark 10:43-44'],
+      difficulty: 3,
+      estimatedTime: 50,
+      category: 'Service',
+      subtopics: ['Spiritual Gifts', 'Servant Leadership', 'Ministry Calling', 'Body of Christ'],
+      resources: [
+        {
+          id: '10',
+          title: 'Spiritual Gifts Survey',
+          type: 'article',
+          author: 'C. Peter Wagner',
+          description: 'Discovering and using your spiritual gifts',
+          rating: 4.3
         }
       ]
     }
